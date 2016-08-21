@@ -22,6 +22,7 @@ def index():
                            user = user,
                            posts = posts)
 
+
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     form = LoginForm()
@@ -32,4 +33,3 @@ def login():
     return render_template('login.html',
                            title='Sign In',
                            form=form)
-
